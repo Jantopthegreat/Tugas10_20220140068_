@@ -1,0 +1,120 @@
+/* Reset CSS untuk memastikan konsistensi di berbagai browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    line-height: 1.6;
+    background-color: pink;
+    color: red;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.header h3 {
+    color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10   px;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Added margin for better spacing */
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none; /* Removed default outline */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="radio"] + label {
+    margin-right: 20px; /* Added margin for spacing between radio buttons */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.peminatan-label {
+       
+        align-items: center;
+        margin-bottom: 30px; /* Atur margin antara setiap label dan input radio */
+    }
+
+ .peminatan-label input[type="radio"] {
+    margin-right: 15px; /* Atur margin antara input radio dan teksnya */
+    }
+

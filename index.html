@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link rel="stylesheet" href="scrip.css" />
+    <title>Praktikum 10</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Pendaftaran Peminatan</h3>
+      </div>
+      <form action="">
+        <label for="nama" style="font-weight: bold">Nama</label><br />
+        <input type="text" placeholder="Contoh : Fauzan Althaf" id="nama" /><br /><br />
+        <label for="nim" style="font-weight: bold">NIM</label><br />
+        <input type="text" placeholder="Contoh : 20220140068" id="nim" /><br /><br />
+        
+        <p>Peminatan Bidang:</p>
+        <p class="peminatan-label">
+        <label for="programing">Programing</label>
+        <input
+          type="radio"
+          name="Peminatan"
+          id="programing"
+          value="programing"
+        />
+   
+       
+        <label for="desain">Desain</label>
+        <input type="radio" name="Peminatan" id="desain" value="desain" />
+        <label for="jaringan">Jaringan</label>
+        <input type="radio" name="Peminatan" id="jaringan" value="jaringan" />
+        <label for="data">Data</label>
+        <input type="radio" name="Peminatan" id="data" value="data" />
+    </p>
+        <p>Angkatan:</p>
+
+        <label for="angkatan" style="font-weight: bold"></label><br />
+        <select id="angkatan" style="height: 50px">
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option></select
+        ><br />
+
+        <label for="tanggal" style="font-weight: bold">Tanggal</label><br />
+        <input type="text" id="tanggal" /><br /><br />
+
+        <label for="alamat" style="font-weight: bold">Alamat</label><br />
+        <textarea
+          placeholder="Contoh : Bantul, Yogyakarta"
+          id="alamat"
+          cols="30"
+          rows="6"
+          style="resize: none;">
+          </textarea>
+          <br/>
+        <button type="button" onclick="kirimdata()">Kirim</button>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
